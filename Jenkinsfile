@@ -8,8 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo 'Cloning GitHub Repository...'
-                checkout scm
+               git branch: 'staging' , url: https://github.com/anilkumar-n-061/dev_test.git
             }
         }
 
