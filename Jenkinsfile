@@ -6,9 +6,9 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-               git branch: 'staging' , url: https://github.com/anilkumar-n-061/dev_test.git
+          stage('Git-checkout'){
+            steps{
+                git branch: 'main' , url: 'https://github.com/anilkumar-n-061/we-application.git'
             }
         }
 
